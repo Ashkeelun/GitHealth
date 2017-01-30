@@ -1,13 +1,13 @@
 MODULES_MANAGER_V2
-GitHealth.__init__|C:\My Programs\Python\Django\GitHealth\GitHealth\__init__.py
-GitHealth.settings|C:\My Programs\Python\Django\GitHealth\GitHealth\settings.py
-GitHealth.urls|C:\My Programs\Python\Django\GitHealth\GitHealth\urls.py
-GitHealth.wsgi|C:\My Programs\Python\Django\GitHealth\GitHealth\wsgi.py
-health.__init__|C:\My Programs\Python\Django\GitHealth\health\__init__.py
-health.admin|C:\My Programs\Python\Django\GitHealth\health\admin.py
-health.apps|C:\My Programs\Python\Django\GitHealth\health\apps.py
-health.migrations.__init__|C:\My Programs\Python\Django\GitHealth\health\migrations\__init__.py
-health.models|C:\My Programs\Python\Django\GitHealth\health\models.py
-health.tests|C:\My Programs\Python\Django\GitHealth\health\tests.py
-health.views|C:\My Programs\Python\Django\GitHealth\health\views.py
-manage|C:\My Programs\Python\Django\GitHealth\manage.py
+GitHealth.__init__|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\GitHealth\__init__.py
+GitHealth.settings|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\GitHealth\settings.py
+GitHealth.urls|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\GitHealth\urls.py
+GitHealth.wsgi|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\GitHealth\wsgi.py
+health.__init__|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\__init__.py
+health.admin|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\admin.py
+health.apps|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\apps.py
+health.migrations.__init__|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\migrations\__init__.py
+health.models|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\models.py
+health.tests|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\tests.py
+health.views|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\health\views.py
+manage|C:\My Programs\Python\Django\Repo\GitHealth\GitHealth\manage.py
