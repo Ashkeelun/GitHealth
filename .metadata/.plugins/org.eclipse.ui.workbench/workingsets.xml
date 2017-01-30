@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1485216685680_1" label="Initial GitHealth" name="Initial GitHealth">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/GitHealth" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1485211992136_0" label="Window Working Set" name="Aggregate for window 1485211992136"/>
+<mruList name="Initial GitHealth"/>
+</workingSetManager>
