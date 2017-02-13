@@ -10,6 +10,6 @@ for repo in g.get_user().get_repos():
 #Search Repository
 r = g.legacy_search_repos("DoSOCSv2")[0]
 #Url and owner name. 
-r.url
-r.owner
+print r.url
+print r.owner
 
