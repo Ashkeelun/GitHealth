@@ -10,6 +10,8 @@ This system is intended to be an expantion, or extention of https://github.com/O
 This Repo will attempt to determine if it's posible to find the following meterics as they relate to repository health:
 
 - Contributer Diversity
+  - Gender
+  - Cultural
 - Path to maintainorship
 - Documentation Updates (https://github.com/OSSHealth/HealthIndicators/issues/7)
 - Communication among members (https://github.com/OSSHealth/HealthIndicators/issues/7)
