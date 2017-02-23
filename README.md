@@ -7,15 +7,7 @@ This system is intended to be an expantion, or extention of https://github.com/O
 ---
 ## Health Metrics
 
-This Repo will attempt to determine if it's posible to find the following meterics as they relate to repository health:
-
-- Contributer Diversity
-  - Gender
-  - Cultural
-- Path to maintainorship
-- Documentation Updates (https://github.com/OSSHealth/HealthIndicators/issues/7)
-- Communication among members (https://github.com/OSSHealth/HealthIndicators/issues/7)
-- The Presence of a plan or road map (https://github.com/OSSHealth/HealthIndicators/issues/7)
+This repository will attempt to determine if it's posible to find the documentation quality in terms of a set of meterics as they relate to repository health.
 
 ---
 ## License
@@ -44,4 +36,5 @@ Python libraries:
 ---
 ## DFD
 
+![image](https://cloud.githubusercontent.com/assets/14626151/23240839/4760d0de-f935-11e6-8d49-f37a9e99c235.png)
 
