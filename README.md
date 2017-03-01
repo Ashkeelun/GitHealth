@@ -2,7 +2,12 @@
 ---
 ##System Description
 
-This system is intended to be an expantion, or extention of https://github.com/OSSHealth/ghdata. This system will add a look up and evaluate a repo's license information as it relates to usability by third parties. This system will be extending upon the data model and schema being used by GHData. The extention will be used to store the repository's licence information.
+This system is intended to be an expantion, or extention of https://github.com/OSSHealth/ghdata. This repository looks to identify and evaluate how to acquire a repo's health and sustainability related metrics, inline with the direction of GHData. This system will be extending upon the data model and schema being used by GHData as needed.
+
+---
+## Health Metrics
+
+This repository will attempt to determine if it's posible to find the documentation quality in terms of a set of meterics as they relate to repository health.
 
 ---
 ## License
@@ -31,6 +36,5 @@ Python libraries:
 ---
 ## DFD
 
-The data flow diagram has been made inreference to how our system relates to https://github.com/OSSHealth/ghdata.
+![image](https://cloud.githubusercontent.com/assets/14626151/23240839/4760d0de-f935-11e6-8d49-f37a9e99c235.png)
 
-![image](https://cloud.githubusercontent.com/assets/14626151/23136835/3d0ce546-f764-11e6-975d-ee505f5e3f53.png)
