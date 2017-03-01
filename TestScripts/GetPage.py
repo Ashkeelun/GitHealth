@@ -21,8 +21,8 @@ def get_file(ref, name, ext):
 
 def parse_file_str(lines):
     slc_re = re.compile(r'#.*')
-    mlc_re = re.compile(r'"""((?:.|\n)*?)"""')
-    alc_re = re.compile(r'(?:"""(?:.|\n)*?"""|#.*)')
+    mlc_re = re.compile(r'["\']{3}((?:.|\n)*?)["\']{3}')
+    alc_re = re.compile(r'(?:["\']{3}((?:.|\n)*?)["\']{3}|#.*)')
     slcs = re.findall(slc_re, lines)
     mlcs = re.findall(mlc_re, lines)
     code = re.sub(alc_re, '', lines)
@@ -59,7 +59,3 @@ for file in metrics:
     for m in file:
         print("{}: {}".format(m, file[m]))
     print("\n")
-
-
-
-
