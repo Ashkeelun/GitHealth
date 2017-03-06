@@ -61,6 +61,7 @@ class File:
         self.mlc_num = len(mlcs)
         self.slc_size = len(''.join(slcs))
         self.mlc_size = len(''.join(mlcs))
+        print("----- {}{} -----\nCode Size: {}\nComment Size: {}".format(self.name, self.type, self.code_size, self.comt_size))
 
 
 
@@ -77,7 +78,7 @@ class Dir:
         req = requests.get(self.repo.domain + self.url).text
         contents = re.findall(self.dir_re, req)
         for content in contents:
-            if content[2] != '.' and content[2]:
+            if content[2] == '.py':
                 print(content[1] + "  " + content[2] + " - " + content[0])
                 self.sub_dirs.append(File(self, content[0], content[1], content[2]))
             elif not content[2]:
