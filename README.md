@@ -12,6 +12,8 @@ This repository will attempt to determine if it's posible to find the documentat
 ---
 ## License
 
+Copyright © 2017 Chris Bane and Celal Gorgun
+
 GitHealth is free software: you can redistribute it and/or modify it under the terms of the MIT License as published by the Open Source Initiative. See the file LICENSE for more details.
 
 All associated documentation is licensed under the terms of the Creative Commons Attribution Share-Alike 4.0 license. See the file CC-BY-SA-4.0 for more details.
