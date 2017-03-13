@@ -1,5 +1,4 @@
-import requests
-import re
+from utils import *
 
 
 def rm_html_escapes(html):
@@ -39,6 +38,8 @@ dir_re = re.compile(r'<a.*?href="(.+?)".*?class="js-navigation-open".*?>(?:<span
 dirs = re.findall(dir_re, r)
 metrics = []
 
+
+
 for dir in dirs:
     print(dir[1] + "  " + dir[2] + " - " + dir[0])
     if dir[2] == '.py':
@@ -59,3 +60,15 @@ for file in metrics:
     for m in file:
         print("{}: {}".format(m, file[m]))
     print("\n")
+
+
+
+
+repo = Repo(r'https://github.com/OSSHealth/ghdata/tree/dev')
+# print(repo.dir.name)
+
+
+# for file in repo.dir.sub_files:
+#     for m in file:
+#         print("{}: {}".format(file.name, file.comt_size))
+#     print("\n")

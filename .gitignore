@@ -89,5 +89,5 @@ ENV/
 .ropeproject
 
 
-.metadata
 .idea
+.metadata
