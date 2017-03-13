@@ -33,6 +33,10 @@ Optional:
 Python libraries:
 - All Python dependencies are handled automatically by `pip`.
 
+GitHealth Specific Dependencies:
+- Requests version 2.13.0
+  - install with: pip install Requests
+
 ---
 ## DFD
 
