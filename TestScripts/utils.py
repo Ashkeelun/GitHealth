@@ -42,7 +42,7 @@ class File:
         self.url = url
         self.name = name
         self.type = type
-
+        # use domain for file reading: https://raw.githubusercontent.com
         file_page = requests.get(self.dir.repo.domain + self.url).text
         raw_line_re = re.compile(r'<td.*?class=".*?js-file-line.*?".*?>(.*?)<\/td>')
         raw_lines = '\n'.join(re.findall(raw_line_re, file_page))
