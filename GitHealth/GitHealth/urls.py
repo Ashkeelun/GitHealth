@@ -19,5 +19,6 @@ from django.contrib.flatpages import urls as flatpages_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^health/', include('health.urls')),
     url(r'^page', include(flatpages_urls)),
 ]
