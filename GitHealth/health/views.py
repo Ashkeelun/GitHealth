@@ -17,11 +17,19 @@ from .utils import *
 
 class testAPI(APIView):
 
+    def get(self, request):
+        url = request.data
+        repo = Repo(url=r'https://github.com/OSSHealth/ghdata/tree/dev')
+
+        # resp = {'instance': repo}
+
+        return Response(repo.dir.total_doc_info(), status=status.HTTP_200_OK)
+
     @csrf_exempt
     def post(self, request):
         url = request.data
         repo = Repo(url=url)
 
-        resp = {'instance': repo}
+        # resp = {'instance': repo}
 
-        return Response(resp, status=status.HTTP_200_OK)
+        return Response(repo.dir.total_doc_info(), status=status.HTTP_200_OK)

@@ -34,7 +34,14 @@ class Repo:
         pass
 
 
+
 class File:
+    comt_size = 0
+    code_size = 0
+    slc_num = 0
+    mlc_num = 0
+    slc_size = 0
+    mlc_size = 0
 
     def __init__(self, dir, url, name, type):
         self.dir = dir
@@ -61,7 +68,13 @@ class File:
         self.mlc_num = len(mlcs)
         self.slc_size = len(''.join(slcs))
         self.mlc_size = len(''.join(mlcs))
-        print("----- {}{} -----\nCode Size: {}\nComment Size: {}".format(self.name, self.type, self.code_size, self.comt_size))
+        # print("----- {}{} -----\nCode Size: {}\nComment Size: {}".format(self.name, self.type, self.code_size, self.comt_size))
+
+    def __str__(self):
+        return "----- {}{} -----\nCode Size: {}\nComment Size: {}\n".format(self.name, self.type, self.code_size, self.comt_size)
+
+    def get_doc_info(self):
+        return {'mlcNum': self.mlc_num, 'mlcSize': self.mlc_size, 'slcNum': self.slc_num,'slcSize': self.slc_size, 'comtSize': self.comt_size, 'codeSize': self.code_size}
 
 
 
@@ -79,10 +92,36 @@ class Dir:
         contents = re.findall(self.dir_re, req)
         for content in contents:
             if content[2] == '.py':
-                print(content[1] + "  " + content[2] + " - " + content[0])
-                self.sub_dirs.append(File(self, content[0], content[1], content[2]))
+                # print(content[1] + "  " + content[2] + " - " + content[0])
+                self.sub_files.append(File(self, content[0], content[1], content[2]))
             elif not content[2]:
-                print(content[1] + "  " + content[2] + " - " + content[0])
+                # print(content[1] + "  " + content[2] + " - " + content[0])
                 self.sub_dirs.append(Dir(self.repo, content[0], content[1], self))
 
+    def __str__(self):
+        x = ''
+        for dir in self.sub_dirs:
+            x += dir.name + '\n'
+        for file in self.sub_files:
+            x = x + str(file)
+        return x
+
+    def get_doc_info(self):
+        files = []
+        for file in self.sub_files:
+            x = file.get_doc_info()
+            y = files.append(x)
+        for dir in self.sub_dirs:
+            files += dir.get_doc_info()
+        return files
+
+    def total_doc_info(self):
+        resaults = {}
+        for f in self.get_doc_info():
+            for k, v in f.items():
+                try:
+                    resaults[k] += v
+                except KeyError:
+                    resaults[k] = v
+        return resaults
 
