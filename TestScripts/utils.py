@@ -116,12 +116,12 @@ class Dir:
         return files
 
     def total_doc_info(self):
-        resaults = {}
+        results = {}
         for f in self.get_doc_info():
             for k, v in f.items():
                 try:
-                    resaults[k] += v
+                    results[k] += v
                 except KeyError:
-                    resaults[k] = v
-        return resaults
+                    results[k] = v
+        return results
 
