@@ -59,6 +59,26 @@ GitHealth Dependencies:
  - In the comand prompt, type the following followed by enter: pip install djangorestframework==3.6.2
 4. Next install the Requests Library
  - In the comand prompt, type the following followed by enter: pip install Requests==2.13.0
+5. Download a copy of the GitHealth repository to your local C drive.
+ - Click [here](https://github.com/Ashkeelun/GitHealth/archive/master.zip) to download a zip of the repository.
+ - Navigate to the downloaded zip file, right-click on it and select "Extract All..." from the context menu.
+ - Enter the following folder location: C:\
+ - Click "Extract", to complete the installation.
+
+---
+## Running The API
+
+1. Open CMD and navigate to the downloaded copy of the GitHealth repository.
+ - Open the windows command promt:
+  - Click on the start menu (this is generally in the bottom left corner of the screen)
+  - type the following: CMD
+  - press enter to open the command prompt.
+ -Enter the following command to navigate to the extracted repository: cd C:\GitHealth-master\GitHealth
+2. Run the Development Server
+ - In CMD opened in step 1, enter the following command: python manage.py runserver
+3. Click [here](http://127.0.0.1:8000/health/test/) to navigate to the API page.
+4. Finally, post an API request in the following format:
+    {"url":"https://github.com/OSSHealth/ghdata/tree/dev"}
 
 ---
 ## DFD
