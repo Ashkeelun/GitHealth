@@ -21,26 +21,67 @@ All associated documentation is licensed under the terms of the Creative Commons
 ---
 ## Dependencies
 
-For compatibility this system will mimic the dependencies of the GHData system, which is currently:
+Development Operating System is Windows 10 64bit with the following specs:
+- All Windows updates realease up to March 2017  
+- CPU: 2.6 GHz
+- SSD: 256 GB
+- RAM: 8 GB
 
-- Python 3.4.x
-- MySQL 5.x or later version (can be on a separate machine)
-- GHTorrent in database (can be installed with `ghdata install --historical` on Linux/OS X machines)
-  - 50GB download, requires ~1TB free space for the database
-
-Optional:
-- Running version of GHTorrent (can be installed with `ghtorrent install`)
-  - Requires Ruby and Git
-
-Python libraries:
-- All Python dependencies are handled automatically by `pip`.
-
-GitHealth Specific Dependencies:
+GitHealth Dependencies:
+- Python version 3.5.3
+- Django version 1.10.6
+- Django REST Framework version 3.6.2
 - Requests version 2.13.0
-  - install with: pip install Requests
+
+---
+## Instalation and Setup
+
+1. Install Python version 3.5.3 on your computer for windows 10.
+ - Download the file called 'Windows x86-64 executable installer' [here](https://www.python.org/downloads/release/python-353/).
+ - Right click on the downloaded file and select 'Run as Administrator' to begin the instalation process.
+ - Check the box at the bottom of the screen to 'Install launch for all users'.
+ - Check the box at the bottom of the screen to 'Add Python 3.5 to PATH'.
+ - Click on Customize installation.
+ - Check all boxes and click 'Next'.
+ - Again, check all boxes.
+ - Select a custom install location by clicking 'Browse'.
+ - Navigate to your 'C' drive.
+ - Create a new folder called 'python35'.
+ - Navigate to the created folder python35 and click 'Okay'.
+ - Click 'Install' to install python.
+2. Once Python is installed install Django.
+ - Open the windows command promt:
+  - Click on the start menu (this is generally in the bottom left corner of the screen)
+  - type the following: CMD
+  - press enter to open the command prompt.
+ - In the comand prompt, type the following followed by enter: pip install Django==1.10.6
+3. Next install the Django REST Framework
+ - In the comand prompt, type the following followed by enter: pip install djangorestframework==3.6.2
+4. Next install the Requests Library
+ - In the comand prompt, type the following followed by enter: pip install Requests==2.13.0
+5. Download a copy of the GitHealth repository to your local C drive.
+ - Click [here](https://github.com/Ashkeelun/GitHealth/archive/master.zip) to download a zip of the repository.
+ - Navigate to the downloaded zip file, right-click on it and select "Extract All..." from the context menu.
+ - Enter the following folder location: C:\
+ - Click "Extract", to complete the installation.
+
+---
+## Running The API
+
+1. Open CMD and navigate to the downloaded copy of the GitHealth repository.
+ - Open the windows command promt:
+  - Click on the start menu (this is generally in the bottom left corner of the screen)
+  - type the following: CMD
+  - press enter to open the command prompt.
+ -Enter the following command to navigate to the extracted repository: cd C:\GitHealth-master\GitHealth
+2. Run the Development Server
+ - In CMD opened in step 1, enter the following command: python manage.py runserver
+3. Click [here](http://127.0.0.1:8000/health/test/) to navigate to the API page.
+4. Finally, post an API request in the following format:
+    {"url":"https://github.com/OSSHealth/ghdata/tree/dev"}
 
 ---
 ## DFD
 
-![image](https://cloud.githubusercontent.com/assets/14626151/23240839/4760d0de-f935-11e6-8d49-f37a9e99c235.png)
+![image](https://cloud.githubusercontent.com/assets/14626151/24373848/5ffe8fbe-12f8-11e7-8668-399e27a5f0d0.png)
 
