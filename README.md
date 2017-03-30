@@ -86,3 +86,8 @@ GitHealth Dependencies:
 
 ![image](https://cloud.githubusercontent.com/assets/14626151/24373848/5ffe8fbe-12f8-11e7-8668-399e27a5f0d0.png)
 
+---
+## ERD
+
+![image](https://cloud.githubusercontent.com/assets/14626151/24486400/9bfa22f2-14cf-11e7-8e53-8e7bb8e45b99.png)
+
