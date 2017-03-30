@@ -1,13 +1,14 @@
 # GitHealth
----
-##System Description
 
-This system is intended to be an expansion, or extention of https://github.com/OSSHealth/ghdata. This repository looks to identify and evaluate how to acquire a repo's health and sustainability related metrics, inline with the direction of GHData. This system will be extending upon the data model and schema being used by GHData as needed.
+---
+## System Description
+
+This system is intended to be used by systems like https://github.com/OSSHealth/ghdata to aggrogate data. This system looks to identify a repo's documentation related metrics for the use by external systems. While the system aims to be platform agnostic and laguage agnostic, it is currently only able to parse Python files in repositories located on Github.
 
 ---
 ## Health Metrics
 
-This repository will attempt to determine if it's posible to find the documentation quality in terms of a set of meterics as they relate to repository health.
+This repository will attempt to determine if it's posible to find the documentation quality in terms of a set of meterics as they relate to repository health. Currently this involves collecting the size and number of multi-line and single-line comments and compare them to the size of the code.
 
 ---
 ## License
