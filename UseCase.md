@@ -9,9 +9,10 @@ The user provides a URL to GitHub repository for a community that they want to l
 1- A user seeks an open source solution and assesses the health and sustainability of an open source community before getting approval to engage or contribute for that project. <br />
 2- Manager could identifies project information that associated documentation information. 
 ## Actors
-1- Manager <br />
-2- Employees <br />
-3- Contributors 
+1- User <br />
+
+## Stackholders
+1- Corporate Developer: To provide the relevant Repositories' files documantation information.
 
 ## Preconditions
 1- A user provides URL to a GitHub repository. <br />
@@ -24,5 +25,4 @@ The user provides a URL to GitHub repository for a community that they want to l
 ## Failed End Condition
 1- The given URL non exists, and could not find GitHub repository, metrics cannot be calculated, and gives error message that that repository is not exist. <br />
 2- The given repository does not have parsable file, so cannot be calculated. <br />
-3- The given repository does not have enough data for metrics to be computed. <br />
-4- The user does not have access to view that metrics on that repository. 
+
