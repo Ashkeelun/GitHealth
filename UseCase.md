@@ -9,8 +9,8 @@ The user provides a URL to GitHub repository for a community that they want to l
 1- User <br />
 
 ## Stackholders
-1- User: provides URL and access to see pyton files' documantation information in this repository.
-2- Repository Owner: To provide the relavant Repositories' files documantation information.
+1- User: provides URL and access to see pyton files' documantation information in this repository.<br />
+2- Repository Owner: To provide the relavant Repositories' files documantation information.<br />
 3- Repository facilitator: To provide the relavant URL's repository and files in that repository.
 ## Preconditions
 1- A user provides URL to a GitHub repository. <br />
