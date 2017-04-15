@@ -98,7 +98,7 @@ GitHealth Dependencies:
 ---
 ## Running The API
 
-# For Windows 10
+### For Windows 10
 1. Open CMD and navigate to the downloaded copy of the GitHealth repository.
  - Open the windows command promt:
   - Click on the start menu (this is generally in the bottom left corner of the screen)
@@ -111,7 +111,7 @@ GitHealth Dependencies:
 4. Finally, post an API request in the following format:
     {"url":"https://github.com/OSSHealth/ghdata/tree/dev"}
 
-# For MacOS Sierra (10.12.3)
+### For MacOS Sierra (10.12.3)
 1. Open Terminal and navigate to the downloaded copy of the GitHealth repository.
  - Open the Terminal:
   - Click on "Spotlight search symbol" (this is generally in the top right corner of the screen)
