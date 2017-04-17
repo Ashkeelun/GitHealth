@@ -5,10 +5,23 @@
 
 This system is intended to be used by systems like https://github.com/OSSHealth/ghdata to aggrogate data. This system looks to identify a repo's documentation related metrics for the use by external systems. While the system aims to be platform agnostic and laguage agnostic, it is currently only able to parse Python files in repositories located on Github.
 
+### Supported Platforms:
+ - Github
+   
+### Supported File Types:
+ - Python files (.py)
+
 ---
 ## Health Metrics
 
 This repository will attempt to determine if it's posible to find the documentation quality in terms of a set of meterics as they relate to repository health. Currently this involves collecting the size and number of multi-line and single-line comments and compare them to the size of the code.
+
+ - slcNum:  The number of single line comments found.
+ - slcSize: The number of characters found in single line comments found.
+ - mlcNum:  The number of multi-line comments found.
+ - mlcSize: The number of characters found in multi-line comments found.
+ - comtSize:The number of characters found across all comments.
+ - codeSize:The number of characters found across all non-comment source code.
 
 ---
 ## License
