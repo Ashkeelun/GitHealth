@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django.contrib.sites',
     'rest_framework',
+    'health',
 ]
 
 MIDDLEWARE = [

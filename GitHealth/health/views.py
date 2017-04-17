@@ -13,8 +13,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from .serializers import UrlSerializer
-from .utils import *
+from .serializers import UrlSerializer, RepositorySerializer
+# from .utils import *
+from .models import Repository
+
 
 class testAPI(APIView):
 
@@ -31,5 +33,10 @@ class testAPI(APIView):
         urlSer = UrlSerializer(data=request.data)
         if urlSer.is_valid():
             url = urlSer.data['url']
-            repo = Repo(url=url)
-            return Response(repo.dir.total_doc_info(), status=status.HTTP_200_OK)
+            repolst = Repository.objects.filter(url=url)
+            if len(repolst) == 0:
+                repo = Repository.manage.create_repository(url=url)
+            else:
+                repo = repolst[0]
+            repoSer = RepositorySerializer(repo)
+            return Response(repoSer.data, status=status.HTTP_200_OK)
