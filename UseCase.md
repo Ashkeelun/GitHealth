@@ -1,18 +1,17 @@
 ## Title: GitHealth
-## Background
-This system is intended to be an expansion, or extension of https://github.com/OSSHealth/ghdata. This repository looks to identify and evaluate how to acquire a repo's health and sustainability related metrics, inline with the direction of GHData. This system will be extending upon the data model and schema being used by GHData as needed.
 
 ## Goal in Context
-The user provides a URL to GitHub repository for a community that they want to learn about. The software returns metrics that indicate the health and sustainability of the repository. 
+The user provides a URL to GitHub repository for a community that they want to learn about. The software returns metrics that indicate the health and sustainability of the repository. Metrics checks each python file in provided URL, and it gives information about documantation in these files. It shows that, how many character code and documantation used in those python files. It can help user, how clear and understandable those python files.
 
 ## Triggers
-1- A user seeks an open source solution and assesses the health and sustainability of an open source community before getting approval to engage or contribute for that project. <br />
-2- Manager could identifies project information that associated documentation information. 
+1- A user can analyze the health and sustainability of an open source community, and user can see documantation information and it will help them to engage or contribute for that project. 
 ## Actors
-1- Manager <br />
-2- Employees <br />
-3- Contributors 
+1- User <br />
 
+## Stackholders
+1- User: provides URL and access to see pyton files' documantation information in this repository.<br />
+2- Repository Owner: To provide the relavant Repositories' files documantation information.<br />
+3- Repository facilitator: To provide the relavant URL's repository and files in that repository.
 ## Preconditions
 1- A user provides URL to a GitHub repository. <br />
 2- Given URL GitHub repository has to be exists. <br />
@@ -24,5 +23,3 @@ The user provides a URL to GitHub repository for a community that they want to l
 ## Failed End Condition
 1- The given URL non exists, and could not find GitHub repository, metrics cannot be calculated, and gives error message that that repository is not exist. <br />
 2- The given repository does not have parsable file, so cannot be calculated. <br />
-3- The given repository does not have enough data for metrics to be computed. <br />
-4- The user does not have access to view that metrics on that repository. 
