@@ -107,6 +107,8 @@ GitHealth Dependencies:
   - In the command prompt, type the following followed by enter: cd C:\GitHealth-master\GitHealth\
  - Install required dependencies
   - In the command prompt, type the following followed by enter: pip install -r requirements.txt
+4. Migrate Database
+ - In the command prompt, type the following followed by enter: python manage.py migrate 
 
 ---
 ## Running The API
