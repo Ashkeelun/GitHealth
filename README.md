@@ -104,7 +104,7 @@ GitHealth Dependencies:
   - Press enter to open the command prompt.
  - Navigate to the repository
   - In the command prompt, type the following followed by enter: C:
-  - In the command prompt, type the following followed by enter: cd C:\GitHealth\GitHealth\
+  - In the command prompt, type the following followed by enter: cd C:\GitHealth-master\GitHealth\
  - Install required dependencies
   - In the command prompt, type the following followed by enter: pip install -r requirements.txt
 
