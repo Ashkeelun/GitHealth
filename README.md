@@ -67,9 +67,9 @@ GitHealth Dependencies:
   - pip install -r requirements.txt
   - python manage.py migrate
 
-#### [Mac](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/mac.md)
+#### Instructions for [Windows](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/windows.md)
 
-#### [Windows](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/windows.md)
+#### Instructions for [Mac](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/mac.md)
 
 ---
 ## Running The API
@@ -90,4 +90,7 @@ GitHealth Dependencies:
 ## ERD
 
 ![image](https://cloud.githubusercontent.com/assets/14626151/24486400/9bfa22f2-14cf-11e7-8e53-8e7bb8e45b99.png)
+
+---
+## [Use Case Documentaion](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/UseCase.md)
 
