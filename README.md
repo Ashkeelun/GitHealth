@@ -55,6 +55,26 @@ GitHealth Dependencies:
 ---
 ## Instalation and Setup
 
+#### Ubuntu
+1. Open the terminal.
+2. Update and install base software by runnning the following commands:
+  - sudo apt-get update
+  - sudo apt-get install python3-pip
+  - sudo apt-get install git python3-pip
+  - sudo pip3 install virtualenv
+3. Make directory for virtual enviornment by running the following commands:
+  - mkdir ~/githealth
+  - cd ~/githealth
+4. Create the virtual enviornment by running the following commands:
+  - virtualenv githealthenv
+  - source githealthenv/bin/activate
+5. clone the GitHealth repository to your local machine and navigate to it, with the following commands:
+  - git clone git://github.com/Ashkeelun/GitHealth ~/githealth-master
+  - cd ~/githealth-master/GitHealth
+6. Install python dependencies for the system and migrate the database using the following commands:
+  - pip install -r requirements.txt
+  - python manage.py migrate
+
 #### Mac
 1. Install Python version 3.5.3 on your computer for Mac.
 - Download the file called 'MacOS X 64-bit/32-bit installer' [here](https://www.python.org/downloads/release/python-353/).
