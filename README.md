@@ -47,6 +47,10 @@ GitHealth Dependencies:
 ---
 ## Instalation and Setup
 
+#### Instructions for [Windows](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/windows.md)
+
+#### Instructions for [Mac](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/mac.md)
+
 #### Ubuntu
 1. Open the terminal.
 2. Update and install base software by runnning the following commands:
@@ -66,10 +70,6 @@ GitHealth Dependencies:
 6. Install python dependencies for the system and migrate the database using the following commands:
   - pip install -r requirements.txt
   - python manage.py migrate
-
-#### Instructions for [Windows](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/windows.md)
-
-#### Instructions for [Mac](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/mac.md)
 
 ---
 ## Running The API
