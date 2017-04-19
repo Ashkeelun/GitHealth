@@ -53,6 +53,6 @@ Development Operating System is Windows 10 64bit with the following specs:
  -Enter the following command to navigate to the extracted repository: cd C:\GitHealth-master\GitHealth
 2. Run the Development Server
  - In CMD opened in step 1, enter the following command: python manage.py runserver
-3. Click [here](http://127.0.0.1:8000/health/test/) to navigate to the API page.
+3. Click [here](http://127.0.0.1:8000/health/api/) or go to, http://127.0.0.1:8000/health/api/ to navigate to the API page.
 4. Finally, post an API request in the following format:
     {"url":"https://github.com/OSSHealth/ghdata/tree/dev"}
