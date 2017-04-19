@@ -65,7 +65,7 @@ GitHealth Dependencies:
   - virtualenv githealthenv
   - source githealthenv/bin/activate
 5. clone the GitHealth repository to your local machine and navigate to it, with the following commands:
-  - git clone git://github.com/Ashkeelun/GitHealth ~/githealth-master
+  - git clone https://github.com/Ashkeelun/GitHealth ~/githealth-master
   - cd ~/githealth-master/GitHealth
 6. Install python dependencies for the system and migrate the database using the following commands:
   - pip install -r requirements.txt
