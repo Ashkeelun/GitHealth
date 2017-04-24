@@ -147,5 +147,5 @@ GitHealth Dependencies:
 ---
 ## ERD
 
-![image](https://cloud.githubusercontent.com/assets/14626151/24486400/9bfa22f2-14cf-11e7-8e53-8e7bb8e45b99.png)
+![image](https://cloud.githubusercontent.com/assets/14626151/25350954/83320d58-28ec-11e7-9f8e-1276c04db8e7.png)
 
