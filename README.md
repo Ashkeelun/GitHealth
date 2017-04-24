@@ -76,7 +76,7 @@ GitHealth Dependencies:
 
 #### For Ubuntu 16.04
 1. Run the Development Server
- - In CMD opened in step 1, enter the following command: python manage.py runserver
+ - In the terminal, enter the following command: python manage.py runserver
 2. Click [here](http://127.0.0.1:8000/health/api/) or go to, http://127.0.0.1:8000/health/api/ to navigate to the API page.
 3. Finally, post an API request in the following format:
     {"url":"https://github.com/OSSHealth/ghdata/tree/dev"}
@@ -84,12 +84,12 @@ GitHealth Dependencies:
 ---
 ## DFD
 
-![image](https://cloud.githubusercontent.com/assets/14626151/24373848/5ffe8fbe-12f8-11e7-8668-399e27a5f0d0.png)
+![image](https://cloud.githubusercontent.com/assets/14626151/25351040/dccceea0-28ec-11e7-88b4-564ce47d9b0b.png)
 
 ---
 ## ERD
 
-![image](https://cloud.githubusercontent.com/assets/14626151/24486400/9bfa22f2-14cf-11e7-8e53-8e7bb8e45b99.png)
+![image](https://cloud.githubusercontent.com/assets/14626151/25350954/83320d58-28ec-11e7-9f8e-1276c04db8e7.png)
 
 ---
 ## [Use Case Documentaion](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/UseCase.md)
