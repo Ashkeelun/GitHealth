@@ -47,9 +47,9 @@ GitHealth Dependencies:
 ---
 ## Instalation and Setup
 
-#### Instructions for [Windows](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/windows.md)
+#### Instructions for [Windows](https://github.com/Ashkeelun/GitHealth/blob/master/docs/windows.md)
 
-#### Instructions for [Mac](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/mac.md)
+#### Instructions for [Mac](https://github.com/Ashkeelun/GitHealth/blob/master/docs/mac.md)
 
 #### Ubuntu
 1. Open the terminal.
