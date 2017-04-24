@@ -91,3 +91,6 @@ GitHealth Dependencies:
 
 ![image](https://cloud.githubusercontent.com/assets/14626151/25350954/83320d58-28ec-11e7-9f8e-1276c04db8e7.png)
 
+---
+## [Use Case Documentaion](https://github.com/Ashkeelun/GitHealth/blob/Dev/docs/UseCase.md)
+
