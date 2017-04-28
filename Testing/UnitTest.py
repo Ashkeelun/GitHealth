@@ -62,6 +62,14 @@ class APITestCase(unittest.TestCase):
         self.assertEquals(r.json()["root"]["sub_files"][5]["slc_num"], 0)
         self.assertEquals(r.json()["root"]["sub_files"][5]["comt_size"], 0)
         self.assertEquals(r.json()["root"]["sub_files"][5]["code_size"], 276)
+        #Test Document Status Which is all documantation information in that repo
+        self.assertEquals(r.json()["document_stats"]["slcSize"], 93)
+        self.assertEquals(r.json()["document_stats"]["mlcNum"], 3)
+        self.assertEquals(r.json()["document_stats"]["mlcSize"], 271)
+        self.assertEquals(r.json()["document_stats"]["codeSize"], 551)
+        self.assertEquals(r.json()["document_stats"]["comtSize"], 364)
+        self.assertEquals(r.json()["document_stats"]["slcNum"], 6)
+
 
 if __name__ == '__main__':
     unittest.main()
