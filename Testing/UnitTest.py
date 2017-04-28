@@ -69,7 +69,13 @@ class APITestCase(unittest.TestCase):
         self.assertEquals(r.json()["document_stats"]["codeSize"], 551)
         self.assertEquals(r.json()["document_stats"]["comtSize"], 364)
         self.assertEquals(r.json()["document_stats"]["slcNum"], 6)
-
+        #Test each file extensions, and is py file or not for every subfiles
+        self.assertEquals(r.json()["root"]["sub_files"][0]["extension"], ".py")
+        self.assertEquals(r.json()["root"]["sub_files"][1]["extension"], ".py")
+        self.assertEquals(r.json()["root"]["sub_files"][2]["extension"], ".py")
+        self.assertEquals(r.json()["root"]["sub_files"][3]["extension"], ".py")
+        self.assertEquals(r.json()["root"]["sub_files"][4]["extension"], ".py")
+        self.assertEquals(r.json()["root"]["sub_files"][5]["extension"], ".py")
 
 if __name__ == '__main__':
     unittest.main()
